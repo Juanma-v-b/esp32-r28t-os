@@ -289,7 +289,7 @@ bool GalleryApp::drawImage(const SdImage& image) {
     }
 
     TJpgDec.setJpgScale(scale);
-    TJpgDec.setSwapBytes(true);
+    TJpgDec.setSwapBytes(false);
     TJpgDec.setCallback(jpegCallback);
 
     const int16_t x = (UI_SCREEN_W - w / scale) / 2;
